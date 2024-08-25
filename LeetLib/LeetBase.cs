@@ -2,5 +2,9 @@
 
 public abstract class LeetBase
 {
-    public abstract void Execute();
+    public virtual void Execute()
+    {
+        Console.WriteLine($"Executing {Name}");
+    }
+    public abstract string Name { get; }
 }

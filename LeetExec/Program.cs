@@ -2,6 +2,8 @@
 
 using LeetLib;
 
-var t = new TwoSumExec();
+var twoSumExec = new TwoSumExec();
+twoSumExec.Execute();
 
-t.Execute();
+var palindromeNumberExec = new PalindromeNumberExec();
+palindromeNumberExec.Execute();

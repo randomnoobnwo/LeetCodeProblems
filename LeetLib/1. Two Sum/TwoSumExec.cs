@@ -32,11 +32,14 @@ public class TwoSumExec : LeetBase
     
     public override void Execute()
     {
+        base.Execute();
         foreach (var testCase in Cases)
         {
             CheckCase(testCase, [new TwoSumBruteForce(), new TwoSumHashmap()]);
         }
     }
+
+    public override string Name => "1. Two Sum";
 
     private void CheckCase(TwoSumCase testCase, TwoSum1[] algorithms)
     {
