@@ -7,3 +7,6 @@ twoSumExec.Execute();
 
 var palindromeNumberExec = new PalindromeNumberExec();
 palindromeNumberExec.Execute();
+
+var containsDuplicateExec = new ContainsDuplicateExec();
+containsDuplicateExec.Execute();
