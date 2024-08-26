@@ -10,7 +10,8 @@ public class ContainsDuplicateExec : LeetBase
             CheckCase(testCase, new ContainsDuplicateBase[] { new ContainsDuplicateHashmap() });
         }
     }
-    public override string Name => "217. Contains Duplicate";
+
+    protected override string Name => "217. Contains Duplicate";
     
     private void CheckCase(ContainsDuplicateCase testCase, ContainsDuplicateBase[] algorithms)
     {

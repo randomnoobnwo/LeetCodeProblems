@@ -13,7 +13,7 @@ public class PalindromeNumberExec : LeetBase
         }
     }
 
-    public override string Name => "9. Palindrome Number";
+    protected override string Name => "9. Palindrome Number";
 
     private void CheckCase(PalindromeNumberCase numberCase, PalindromeNumberBase[] algorithms)
     {

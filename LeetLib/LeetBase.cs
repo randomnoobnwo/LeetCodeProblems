@@ -6,5 +6,6 @@ public abstract class LeetBase
     {
         Console.WriteLine($"Executing {Name}");
     }
-    public abstract string Name { get; }
+
+    protected abstract string Name { get; }
 }

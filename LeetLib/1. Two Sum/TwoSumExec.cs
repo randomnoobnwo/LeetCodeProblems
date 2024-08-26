@@ -39,7 +39,7 @@ public class TwoSumExec : LeetBase
         }
     }
 
-    public override string Name => "1. Two Sum";
+    protected override string Name => "1. Two Sum";
 
     private void CheckCase(TwoSumCase testCase, TwoSum1[] algorithms)
     {
