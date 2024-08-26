@@ -1,6 +1,9 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-using LeetLib;
+using LeetExec;using LeetLib;
+
+// FilesGenerator.GenerateFiles("242. Valid Anagram", "string s, string t", "bool");
+// return;
 
 var twoSumExec = new TwoSumExec();
 twoSumExec.Execute();
@@ -10,3 +13,6 @@ palindromeNumberExec.Execute();
 
 var containsDuplicateExec = new ContainsDuplicateExec();
 containsDuplicateExec.Execute();
+
+var validAnagramExec = new ValidAnagramExec();
+validAnagramExec.Execute();
