@@ -11,4 +11,19 @@
       <ProjectReference Include="..\LeetLib\LeetLib.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Remove="FilesGenerator\BaseTemplate.txt" />
+      <Content Include="FilesGenerator\BaseTemplate.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="FilesGenerator\ExecTemplate.txt" />
+      <Content Include="FilesGenerator\ExecTemplate.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="FilesGenerator\V1Template.txt" />
+      <Content Include="FilesGenerator\V1Template.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+
 </Project>

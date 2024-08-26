@@ -1,0 +1,11 @@
+namespace LeetLib;
+
+public class {name}V1 : {name}Base
+{
+    public override {returns} {name}({parameters})
+    {
+        return ;
+    }
+
+    public override string Name => "V1";
+}

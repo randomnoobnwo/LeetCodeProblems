@@ -1,0 +1,7 @@
+namespace LeetLib;
+
+public abstract class {name}Base
+{
+    public abstract {returns} {name}({parameters});
+    public abstract string Name { get; }
+}

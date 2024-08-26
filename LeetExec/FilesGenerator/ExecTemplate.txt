@@ -1,0 +1,39 @@
+namespace LeetLib;
+
+public class {name}Exec : LeetBase
+{
+    public override void Execute()
+    {
+        base.Execute();
+        foreach (var testCase in Cases)
+        {
+            CheckCase(testCase, new {name}Base[] { new {name}V1() });
+        }
+    }
+
+    protected override string Name => "{fullName}";
+    
+    private void CheckCase({name}Case testCase, {name}Base[] algorithms)
+    {
+        Console.WriteLine($"Case: {string.Join(", ", testCase)}");
+        
+        foreach (var algorithm in algorithms)
+        {
+            var result = algorithm.{name}(testCase);
+            Console.WriteLine($"{algorithm.Name}: {(result == testCase.Expected ? "Test Passed" : "Test Failed")}");
+        }
+    }
+    
+    private {name}Case[] Cases
+    {
+        get
+        {
+            return new[] {};
+        }
+    }
+}
+
+public class {name}Case
+{
+    public bool Expected { get; set; }
+}
