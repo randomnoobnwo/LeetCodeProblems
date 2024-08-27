@@ -43,7 +43,7 @@ public class TwoSumExec : LeetBase
 
     private void CheckCase(TwoSumCase testCase, TwoSum1[] algorithms)
     {
-        Console.WriteLine($"Case: {string.Join(", ", testCase.Nums)} Target: {testCase.Target}");
+        Console.WriteLine($"Case: {testCase.Description}");
         
         foreach (var algorithm in algorithms)
         {
@@ -58,9 +58,10 @@ public class TwoSumExec : LeetBase
     }
 }
 
-internal class TwoSumCase
+internal class TwoSumCase : TestCase
 {
     public int[] Nums { get; set; }
     public int Target { get; set; }
     public int[] Expected { get; set; }
+    public override string Description => $"Nums: {string.Join(", ", Nums)} Target: {Target}";
 }

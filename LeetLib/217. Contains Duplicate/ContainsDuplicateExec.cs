@@ -15,7 +15,7 @@ public class ContainsDuplicateExec : LeetBase
     
     private void CheckCase(ContainsDuplicateCase testCase, ContainsDuplicateBase[] algorithms)
     {
-        Console.WriteLine($"Case: {string.Join(", ", testCase.Nums)}");
+        Console.WriteLine($"Case: {testCase.Description}");
         
         foreach (var algorithm in algorithms)
         {
@@ -50,8 +50,9 @@ public class ContainsDuplicateExec : LeetBase
     }
 }
 
-public class ContainsDuplicateCase
+public class ContainsDuplicateCase : TestCase
 {
     public int[] Nums { get; set; }
     public bool Expected { get; set; }
+    public override string Description => $"Nums: {string.Join(", ", Nums)}";
 }

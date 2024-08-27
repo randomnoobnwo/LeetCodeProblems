@@ -15,7 +15,7 @@ public class {name}Exec : LeetBase
     
     private void CheckCase({name}Case testCase, {name}Base[] algorithms)
     {
-        Console.WriteLine($"Case: {string.Join(", ", testCase)}");
+        Console.WriteLine($"Case: {testCase.Description}");
         
         foreach (var algorithm in algorithms)
         {
@@ -33,7 +33,8 @@ public class {name}Exec : LeetBase
     }
 }
 
-public class {name}Case
+public class {name}Case : TestCase
 {
-    public bool Expected { get; set; }
+    public {returns} Expected { get; set; }
+    public override string Description { get; }
 }

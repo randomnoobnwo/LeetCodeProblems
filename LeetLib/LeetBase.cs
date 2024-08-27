@@ -9,3 +9,8 @@ public abstract class LeetBase
 
     protected abstract string Name { get; }
 }
+
+public abstract class TestCase
+{
+    public abstract string Description { get; }
+}

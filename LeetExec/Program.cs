@@ -1,8 +1,9 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-using LeetExec;using LeetLib;
+using LeetExec;
+using LeetLib;
 
-// FilesGenerator.GenerateFiles("242. Valid Anagram", "string s, string t", "bool");
+// FilesGenerator.GenerateFiles("49. Group Anagrams", "string[] strs", "IList<IList<string>>");
 // return;
 
 var twoSumExec = new TwoSumExec();
@@ -16,3 +17,6 @@ containsDuplicateExec.Execute();
 
 var validAnagramExec = new ValidAnagramExec();
 validAnagramExec.Execute();
+
+var groupAnagramsExec = new GroupAnagramsExec();
+groupAnagramsExec.Execute();

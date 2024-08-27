@@ -17,7 +17,7 @@ public class PalindromeNumberExec : LeetBase
 
     private void CheckCase(PalindromeNumberCase numberCase, PalindromeNumberBase[] algorithms)
     {
-        Console.WriteLine($"Case: {numberCase.X}");
+        Console.WriteLine($"Case: {numberCase.Description}");
         
         foreach (var algorithm in algorithms)
         {
@@ -69,8 +69,10 @@ public class PalindromeNumberExec : LeetBase
     
 }
 
-public class PalindromeNumberCase
+public class PalindromeNumberCase : TestCase
 {
     public int X { get; set; }
     public bool Expected { get; set; }
+
+    public override string Description => $"X: {X}";
 }
