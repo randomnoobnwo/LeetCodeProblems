@@ -19,8 +19,11 @@ public class {name}Exec : LeetBase
         
         foreach (var algorithm in algorithms)
         {
+            // measure execution time
+            var watch = System.Diagnostics.Stopwatch.StartNew();
             var result = algorithm.{name}(testCase);
-            Console.WriteLine($"{algorithm.Name}: {(result == testCase.Expected ? "Test Passed" : "Test Failed")}");
+            watch.Stop();
+            Console.WriteLine($"{algorithm.Name}: {(result == testCase.Expected ? "Test Passed" : "Test Failed")} in {watch.ElapsedTicks}ticks");
         }
     }
     

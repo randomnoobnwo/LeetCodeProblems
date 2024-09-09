@@ -7,7 +7,7 @@ public class GroupAnagramsExec : LeetBase
         base.Execute();
         foreach (var testCase in Cases)
         {
-            CheckCase(testCase, new GroupAnagramsBase[] { new GroupAnagramsV1() });
+            CheckCase(testCase, new GroupAnagramsBase[] { new GroupAnagramsV1(), new GroupAnagramsV2(), new GroupAnagramsV3() });
         }
     }
 
