@@ -34,7 +34,8 @@ public class FilesGenerator
         
         execTemplate = execTemplate.Replace("{name}", problemShortName);
         execTemplate = execTemplate.Replace("{fullName}", problemName);
-        
+        execTemplate = execTemplate.Replace("{returns}", returns);
+
         // write into directory
         var execFilePath = Path.Combine(path, $"{problemShortName}Exec.cs");
         File.WriteAllText(execFilePath, execTemplate);

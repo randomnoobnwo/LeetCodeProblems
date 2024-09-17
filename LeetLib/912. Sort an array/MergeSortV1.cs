@@ -53,12 +53,5 @@ public class MergeSortV1 : SortAnArrayBase
             nums[k++] = right[j++];
     }
 
-    private void Swap(int[] nums, int p1, int p2)
-    {
-        var temp = nums[p1];
-        nums[p1] = nums[p2];
-        nums[p2] = temp;
-    }
-
     public override string Name => "MergeSortV1";
 }

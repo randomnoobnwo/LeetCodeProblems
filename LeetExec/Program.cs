@@ -3,7 +3,7 @@
 using LeetExec;
 using LeetLib;
 
-// FilesGenerator.GenerateFiles("912. Sort an array", "int[] nums", "int[]");
+// FilesGenerator.GenerateFiles("494. Target Sum", "int[] nums, int target", "int[]");
 // return;
 
 // var twoSumExec = new TwoSumExec();
@@ -20,6 +20,9 @@ using LeetLib;
 //
 // var groupAnagramsExec = new GroupAnagramsExec();
 // groupAnagramsExec.Execute();
+//
+// var sortAnArray = new SortAnArrayExec();
+// sortAnArray.Execute();
 
-var sortAnArray = new SortAnArrayExec();
-sortAnArray.Execute();
+var targetSum = new TargetSumExec();
+targetSum.Execute();
