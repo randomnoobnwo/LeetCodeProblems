@@ -36,7 +36,7 @@ public class QuickSortV1 : SortAnArrayBase
         
         Swap(nums, i + 1, high);
         
-        return i;
+        return i + 1;
     }
 
     private void Swap(int[] nums, int p1, int p2)
