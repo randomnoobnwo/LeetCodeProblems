@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetLib", "LeetLib\LeetLib.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetExec", "LeetExec\LeetExec.csproj", "{A8F97B74-F10B-4E15-8E51-372E11011E2A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excersizes", "Excersizes\Excersizes.csproj", "{679E9F50-F53A-4D2C-B372-18688CD8AEF6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{A8F97B74-F10B-4E15-8E51-372E11011E2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8F97B74-F10B-4E15-8E51-372E11011E2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8F97B74-F10B-4E15-8E51-372E11011E2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{679E9F50-F53A-4D2C-B372-18688CD8AEF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{679E9F50-F53A-4D2C-B372-18688CD8AEF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{679E9F50-F53A-4D2C-B372-18688CD8AEF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{679E9F50-F53A-4D2C-B372-18688CD8AEF6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
