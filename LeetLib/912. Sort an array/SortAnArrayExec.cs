@@ -52,6 +52,11 @@ public class SortAnArrayExec : LeetBase
         {
             Nums = [5, 1, 1, 2, 0, 0],
             Expected = [0, 0, 1, 1, 2, 5]
+        },
+        new()
+        {
+            Nums = [-4,0,7,4,9,-5,-1,0,-7,-1],
+            Expected = [-7,-5,-4,-1,-1,0,0,4,7,9]
         }
     ];
 }
