@@ -5,12 +5,12 @@ using LeetLib;
 
 // FilesGenerator.GenerateFiles(new GenData
 // {
-//     Name = "119. Pascal's Triangle II",
+//     Name = "509. Fibonacci Number",
 //     Parameters = new[]
 //     {
-//         ("int", "rowIndex")
+//         ("int", "n")
 //     },
-//     Returns = "IList<int>"
+//     Returns = "int"
 // });
 // return;
 
@@ -41,5 +41,8 @@ using LeetLib;
 // var pascal_sTriangle = new Pascal_sTriangleExec();
 // pascal_sTriangle.Execute();
 
-var pascal_sTriangleII = new Pascal_sTriangleIIExec();
-pascal_sTriangleII.Execute();
+// var pascal_sTriangleII = new Pascal_sTriangleIIExec();
+// pascal_sTriangleII.Execute();
+
+var fibonacciNumber = new FibonacciNumberExec();
+fibonacciNumber.Execute();

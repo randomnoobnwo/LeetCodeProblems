@@ -7,7 +7,7 @@ public class {name}Exec : LeetBase
         base.Execute();
         foreach (var testCase in Cases)
         {
-            CheckCase(testCase, new {name}Base[] { new {name}V1() });
+            CheckCase(testCase, [new {name}V1()]);
         }
     }
 
