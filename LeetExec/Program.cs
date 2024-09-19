@@ -3,7 +3,7 @@
 using LeetExec;
 using LeetLib;
 
-// FilesGenerator.GenerateFiles("494. Target Sum", "int[] nums, int target", "int[]");
+// FilesGenerator.GenerateFiles("70. Climbing Stairs", "int n", "int");
 // return;
 
 // var twoSumExec = new TwoSumExec();
@@ -24,5 +24,8 @@ using LeetLib;
 // var sortAnArray = new SortAnArrayExec();
 // sortAnArray.Execute();
 
-var targetSum = new TargetSumExec();
-targetSum.Execute();
+// var targetSum = new TargetSumExec();
+// targetSum.Execute();
+
+var climbingStairs = new ClimbingStairsExec();
+climbingStairs.Execute();
