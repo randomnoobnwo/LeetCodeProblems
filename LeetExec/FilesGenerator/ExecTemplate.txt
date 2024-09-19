@@ -21,7 +21,7 @@ public class {name}Exec : LeetBase
         {
             // measure execution time
             var watch = System.Diagnostics.Stopwatch.StartNew();
-            var result = algorithm.{name}(testCase);
+            var result = algorithm.{name}({arguments});
             watch.Stop();
             Console.WriteLine($"{algorithm.Name}: {(result == testCase.Expected ? "Test Passed" : "Test Failed")} in {watch.ElapsedTicks}ticks");
         }
@@ -38,6 +38,7 @@ public class {name}Exec : LeetBase
 
 public class {name}Case : TestCase
 {
+    {parameters}
     public {returns} Expected { get; set; }
     public override string Description { get; }
 }

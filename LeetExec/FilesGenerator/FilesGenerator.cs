@@ -1,9 +1,37 @@
+using System.Text;
+
 namespace LeetExec;
+
+public class GenData
+{
+    public string Name;
+    public (string, string)[] Parameters;
+    public string Returns;
+}
 
 public class FilesGenerator
 {
-    public static void GenerateFiles(string problemName, string parameters, string returns)
+    private static string Slugify(string name)
     {
+        // replace special characters with _
+        var sb = new StringBuilder();
+        foreach (var c in name)
+        {
+            if (c != '\'')
+            {
+                sb.Append(c);
+            }
+            else
+            {
+                sb.Append('_');
+            }
+        }
+        return sb.ToString();
+    }
+    public static void GenerateFiles(GenData data)
+    {
+        var problemName = Slugify(data.Name);
+        var returns = data.Returns;
         var workingDirectory = Path.Combine(Directory.GetCurrentDirectory(), "..", "..", "..", "..", "LeetLib");
         var path = Path.Combine(workingDirectory, $"{problemName}");
 
@@ -21,7 +49,7 @@ public class FilesGenerator
         var template = File.ReadAllText(templatePath);
         
         template = template.Replace("{name}", problemShortName);
-        template = template.Replace("{parameters}", parameters);
+        template = template.Replace("{parameters}", string.Join(", ", data.Parameters.Select(p => $"{p.Item1} {p.Item2}")));
         template = template.Replace("{returns}", returns);
         
         // write into directory
@@ -35,6 +63,8 @@ public class FilesGenerator
         execTemplate = execTemplate.Replace("{name}", problemShortName);
         execTemplate = execTemplate.Replace("{fullName}", problemName);
         execTemplate = execTemplate.Replace("{returns}", returns);
+        execTemplate = execTemplate.Replace("{arguments}", string.Join(", ", data.Parameters.Select(p => $"testCase.{p.Item2}")));
+        execTemplate = execTemplate.Replace("{parameters}", string.Join(Environment.NewLine, data.Parameters.Select(p => $" public {p.Item1} {p.Item2};")));
 
         // write into directory
         var execFilePath = Path.Combine(path, $"{problemShortName}Exec.cs");
@@ -45,7 +75,7 @@ public class FilesGenerator
         var v1Template = File.ReadAllText(v1TemplatePath);
         
         v1Template = v1Template.Replace("{name}", problemShortName);
-        v1Template = v1Template.Replace("{parameters}", parameters);
+        v1Template = v1Template.Replace("{parameters}", string.Join(", ", data.Parameters.Select(p => $"{p.Item1} {p.Item2}")));
         v1Template = v1Template.Replace("{returns}", returns);
         
         // write into directory
