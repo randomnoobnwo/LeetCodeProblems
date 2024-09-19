@@ -3,7 +3,7 @@
 using LeetExec;
 using LeetLib;
 
-// FilesGenerator.GenerateFiles("70. Climbing Stairs", "int n", "int");
+// FilesGenerator.GenerateFiles("118. Pascal_s Triangle", "int numrows", "IList<IList<int>>");
 // return;
 
 // var twoSumExec = new TwoSumExec();
@@ -27,5 +27,8 @@ using LeetLib;
 // var targetSum = new TargetSumExec();
 // targetSum.Execute();
 
-var climbingStairs = new ClimbingStairsExec();
-climbingStairs.Execute();
+// var climbingStairs = new ClimbingStairsExec();
+// climbingStairs.Execute();
+
+var pascal_sTriangle = new Pascal_sTriangleExec();
+pascal_sTriangle.Execute();
