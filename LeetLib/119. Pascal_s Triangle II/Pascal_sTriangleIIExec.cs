@@ -21,7 +21,7 @@ public class Pascal_sTriangleIIExec : LeetBase
         {
             // measure execution time
             var watch = System.Diagnostics.Stopwatch.StartNew();
-            var result = algorithm.Pascal_sTriangleII(testCase.rowIndex);
+            var result = algorithm.GetRow(testCase.rowIndex);
             watch.Stop();
             Console.WriteLine($"{algorithm.Name}: {(VerifyCase(result, testCase.Expected) ? "Test Passed" : "Test Failed")} in {watch.ElapsedTicks}ticks");
         }

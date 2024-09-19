@@ -9,7 +9,7 @@ public class Pascal_sTriangleExec : LeetBase
         base.Execute();
         foreach (var testCase in Cases)
         {
-            CheckCase(testCase, new Pascal_sTriangleBase[] { new Pascal_sTriangleV1(), new Pascal_sTriangleV2() });
+            CheckCase(testCase, new Pascal_sTriangleBase[] { new Pascal_sTriangleV1(), new Pascal_sTriangleV2(), new Pascal_sTriangleV3() });
         }
     }
 

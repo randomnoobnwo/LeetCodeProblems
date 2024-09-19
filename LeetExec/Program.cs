@@ -3,16 +3,16 @@
 using LeetExec;
 using LeetLib;
 
-FilesGenerator.GenerateFiles(new GenData
-{
-    Name = "119. Pascal's Triangle II",
-    Parameters = new[]
-    {
-        ("int", "rowIndex")
-    },
-    Returns = "IList<int>"
-});
-return;
+// FilesGenerator.GenerateFiles(new GenData
+// {
+//     Name = "119. Pascal's Triangle II",
+//     Parameters = new[]
+//     {
+//         ("int", "rowIndex")
+//     },
+//     Returns = "IList<int>"
+// });
+// return;
 
 // var twoSumExec = new TwoSumExec();
 // twoSumExec.Execute();
@@ -38,5 +38,8 @@ return;
 // var climbingStairs = new ClimbingStairsExec();
 // climbingStairs.Execute();
 
-var pascal_sTriangle = new Pascal_sTriangleExec();
-pascal_sTriangle.Execute();
+// var pascal_sTriangle = new Pascal_sTriangleExec();
+// pascal_sTriangle.Execute();
+
+var pascal_sTriangleII = new Pascal_sTriangleIIExec();
+pascal_sTriangleII.Execute();
