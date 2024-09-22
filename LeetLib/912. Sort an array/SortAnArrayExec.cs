@@ -7,7 +7,7 @@ public class SortAnArrayExec : LeetBase
         base.Execute();
         foreach (var testCase in Cases)
         {
-            CheckCase(testCase, new SortAnArrayBase[] { new QuickSortV1(), new MergeSortV1() });
+            CheckCase(testCase, new SortAnArrayBase[] { new QuickSortV1(), new MergeSortV1(), new QuickSortV2() });
         }
     }
 

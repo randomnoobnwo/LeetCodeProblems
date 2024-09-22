@@ -4,10 +4,11 @@ public class FibonacciNumberExec : LeetBase
 {
     public override void Execute()
     {
+        var s = new Queue<int>();
         base.Execute();
         foreach (var testCase in Cases)
         {
-            CheckCase(testCase, [new FibonacciNumberV1()]);
+            CheckCase(testCase, [new FibonacciNumberV1(), new FibonacciNumberV2()]);
         }
     }
 
@@ -40,19 +41,14 @@ public class FibonacciNumberExec : LeetBase
                 },
                 new FibonacciNumberCase()
                 {
-                    n = 3,
-                    Expected = 2
+                    n = 20,
+                    Expected = 6765
                 },
                 new FibonacciNumberCase()
                 {
-                    n = 4,
-                    Expected = 3
-                },
-                new FibonacciNumberCase()
-                {
-                    n = 5,
-                    Expected = 5
-                },
+                    n = 30,
+                    Expected = 832040
+                }
             };
         }
     }
